@@ -36,11 +36,11 @@
     id: "ZWL004800"
   },
   {
-    name: "Sector 53",
+    name: "Sector 53, Delhi NCR",
     id: "ZWL003118"
   },
   {
-    name: "Sector 49",
+    name: "Sector 49, Delhi NCR",
     id: "ZWL002091"
   },
   {
@@ -60,11 +60,11 @@
     id: "ZWL006538"
   },
   {
-    name: "Sector 66",
+    name: "Sector 66, Delhi NCR",
     id: "ZWL003075"
   },
   {
-    name: "Sector 57",
+    name: "Sector 57, Delhi NCR",
     id: "ZWL003721"
   },
   {
@@ -100,7 +100,7 @@
     id: "ZWL007486"
   },
   {
-    name: "Sector 15",
+    name: "Sector 15, Delhi NCR",
     id: "ZWL006287"
   },
   {
@@ -112,7 +112,7 @@
     id: "ZWL008405"
   },
   {
-    name: "Sector 28",
+    name: "Sector 28, Delhi NCR",
     id: "ZWL004455"
   },
   {
@@ -128,7 +128,7 @@
     id: "ZWL008317"
   },
   {
-    name: "Sector 128",
+    name: "Sector 128, Delhi NCR",
     id: "ZWL005878"
   },
   {
@@ -176,7 +176,7 @@
     id: "ZWL009335"
   },
   {
-    name: "Sector 24",
+    name: "Sector 24, Delhi NCR",
     id: "ZWL009638"
   },
   {
@@ -237,7 +237,7 @@
     id: "ZWL008191"
   },
   {
-    name: "Sector 46",
+    name: "Sector 46, Delhi NCR",
     id: "ZWL006092"
   },
   {
@@ -285,7 +285,7 @@
     id: "ZWL003043"
   },
   {
-    name: "Sector 51",
+    name: "Sector 51, Delhi NCR",
     id: "ZWL004159"
   },
   {
@@ -301,7 +301,7 @@
     id: "ZWL001663"
   },
   {
-    name: "Sector 47",
+    name: "Sector 47, Delhi NCR",
     id: "ZWL005762"
   },
   {
@@ -309,7 +309,7 @@
     id: "ZWL005345"
   },
   {
-    name: "Sector 25",
+    name: "Sector 25, Delhi NCR",
     id: "ZWL008225"
   },
   {
@@ -321,11 +321,11 @@
     id: "ZWL003591"
   },
   {
-    name: "Sector 31",
+    name: "Sector 31, Delhi NCR",
     id: "ZWL007061"
   },
   {
-    name: "Sector 23",
+    name: "Sector 23, Delhi NCR",
     id: "ZWL008476"
   },
   {
@@ -369,7 +369,7 @@
     id: "ZWL001186"
   },
   {
-    name: "Sector 18",
+    name: "Sector 18, Delhi NCR",
     id: "ZWL004789"
   },
   {
@@ -402,7 +402,7 @@
     id: "ZWL006384"
   },
   {
-    name: "Sector 14",
+    name: "Sector 14, Delhi NCR",
     id: "ZWL007840"
   },
   {
@@ -434,7 +434,7 @@
     id: "ZWL004803"
   },
   {
-    name: "Sector 50",
+    name: "Sector 50, Delhi NCR",
     id: "ZWL003444"
   },
   {
@@ -458,7 +458,7 @@
     id: "ZWL007666"
   },
   {
-    name: "Sector 84",
+    name: "Sector 84, Delhi NCR",
     id: "ZWL002490"
   },
   {
@@ -466,7 +466,7 @@
     id: "ZWL007138"
   },
   {
-    name: "Sector 27",
+    name: "Sector 27, Delhi NCR",
     id: "ZWL009706"
   },
   {
