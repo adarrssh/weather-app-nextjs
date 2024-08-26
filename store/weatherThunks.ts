@@ -8,7 +8,6 @@ const  formatTime = () => {
     return `${hours}:${minutes}`;
 }
 
-// Thunk to fetch weather data
 export const fetchWeather = createAsyncThunk(
   "weather/fetchWeather",
   async ({ localityId, locality }: { localityId: string; locality: string }, thunkAPI) => {
@@ -16,7 +15,7 @@ export const fetchWeather = createAsyncThunk(
       const res = await axios(`/api/weather?localityId=${localityId}`);
       const data = {
         ...res.data.data,
-        date: formatTime(), // Assuming formatTime is a function that formats the current time
+        date: formatTime(), 
         locality,
       };
       return data;
