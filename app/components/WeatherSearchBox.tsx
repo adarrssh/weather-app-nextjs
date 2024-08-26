@@ -3,36 +3,23 @@ import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 import Locations from '../utils/data'
 import { SearchBoxProps } from '../interface';
 import axios from 'axios';
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "@/store/store";
+import { addWeatherData } from "@/store/slice";
+import { fetchWeather } from '@/store/weatherThunks';
 
 
 
-export default function SearchBox({setWeatherResults, locality}:SearchBoxProps) {
+export default function SearchBox() {
 
-  function formatTime() {
-    const date = new Date();
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-    return `${hours}:${minutes}`;
-  }
+  const dispatch = useDispatch<AppDispatch>()
 
-  const fetchWeather = async (localityId: string,locality:string) => {
-    try {
-      const res = await axios(`/api/weather?localityId=${localityId}`);
-      const data = {
-        ...res.data.data,
-        date: formatTime(),
-        locality
-      }
-
-      setWeatherResults((prevResults) => [data ,  ...prevResults]);
-    } catch (error) {
-      console.error('Error in fetchWeather: ', error)
-      alert('Somehing bad happend')
-    }
+  const handleFetchWeather = (localityId: string, locality: string) => {
+    dispatch(fetchWeather({localityId,locality}));
   };
 
   const handleOnSelect = (item: {id:string,name:string}) => {
-    fetchWeather(item.id,item.name)
+    handleFetchWeather(item.id,item.name)
   }
 
   const formatResult = (item: { id: string ; name: string }) => {
