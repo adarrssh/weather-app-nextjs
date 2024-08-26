@@ -15,7 +15,7 @@ interface WeatherData {
     id: string;
 }
 
-export interface CounterState{
+interface CounterState{
     weatherResults: WeatherData[];
     loading: boolean;
     error: string | null;
@@ -32,7 +32,7 @@ export const counterSlice = createSlice({
     initialState,
     reducers : {
         addWeatherData: (state, action: PayloadAction<WeatherData>) => {
-            state.weatherResults.unshift(action.payload); // Add the new item at the start of the array
+            state.weatherResults.unshift(action.payload); 
         },
     },
     extraReducers: (builder) => {
@@ -43,7 +43,7 @@ export const counterSlice = createSlice({
           })
           .addCase(fetchWeather.fulfilled, (state, action: PayloadAction<WeatherData>) => {
             state.loading = false;
-            state.weatherResults.unshift(action.payload); // Add the new weather data at the beginning
+            state.weatherResults.unshift(action.payload); 
           })
           .addCase(fetchWeather.rejected, (state, action) => {
             state.loading = false;

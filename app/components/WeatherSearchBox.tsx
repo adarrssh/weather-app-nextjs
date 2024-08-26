@@ -22,13 +22,6 @@ export default function SearchBox() {
     handleFetchWeather(item.id,item.name)
   }
 
-  const formatResult = (item: { id: string ; name: string }) => {
-    return (
-      <>
-        <span style={{ display: 'block', textAlign: 'left' }}>{item.name}</span>
-      </>
-    )
-  }
 
   return (
     
@@ -38,7 +31,6 @@ export default function SearchBox() {
             items={Locations}
             onSelect={handleOnSelect}
             autoFocus
-            formatResult={formatResult}
             />
     </div>
 
