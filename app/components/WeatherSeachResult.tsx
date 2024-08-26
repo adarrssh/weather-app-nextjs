@@ -24,9 +24,9 @@ const WeatherSeachResult: React.FC<WeatherSeachResultProps> = ({ item }) => {
   const getImgSrc = (item:WeatherResults) => {
     if(item.rain_accumulation != null && item.rain_accumulation >0){
       if( item.rain_intensity != null && item.rain_intensity>0){
-        return '/images/cloudy.png'
+        return '/images/heavy-rain.png'
       }
-      return '/images/heavy-rain.png'
+      return '/images/cloudy.png'
     }else if(item.temperature!= null && item.temperature < 15){
       return '/images/cold.png'
     }else{
