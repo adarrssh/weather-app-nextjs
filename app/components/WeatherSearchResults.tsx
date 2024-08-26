@@ -5,6 +5,7 @@ import { RootState } from "@/store/store";
 import Loader from "./loader";
 
 const WeatherSearchResults = () => {
+  
   const { weatherResults, loading } = useSelector(
     (state: RootState) => state.counter
   );
@@ -19,7 +20,7 @@ const WeatherSearchResults = () => {
     <main className="w-full pt-10 flex justify-center items-center  flex-col ">
       {weatherResults.length > 0 ? (
         weatherResults.map((item: WeatherResults) => (
-          <WeatherSeachResult item={item} />
+          <WeatherSeachResult key={item.id} item={item} />
         ))
       ) : (
         <div className="justify-center items-center rounded-lg mt-5  w-72 sm:w-auto bg-box text-text">
