@@ -20,6 +20,19 @@ const WeatherSeachResult: React.FC<WeatherSeachResultProps> = ({ item }) => {
   
     return `${dayName}, ${dayOfMonth} ${monthName}`;
   };
+
+  const getImgSrc = (item:WeatherResults) => {
+    if(item.rain_accumulation != null && item.rain_accumulation >0){
+      if( item.rain_intensity != null && item.rain_intensity>0){
+        return '/images/cloudy.png'
+      }
+      return '/images/heavy-rain.png'
+    }else if(item.temperature!= null && item.temperature < 15){
+      return '/images/cold.png'
+    }else{
+      return '/images/sun.png'
+    }
+  }
   
   return (
     
@@ -44,7 +57,7 @@ const WeatherSeachResult: React.FC<WeatherSeachResultProps> = ({ item }) => {
             </div>
             <div className="flex-1 flex justify-center items-center">
               <Image
-                src={'/images/cloudy.png'}
+                src={`${getImgSrc(item)}`}
                 alt="image"
                 width={80}
                 height={150}
