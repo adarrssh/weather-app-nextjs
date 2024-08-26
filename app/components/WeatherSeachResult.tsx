@@ -8,6 +8,19 @@ interface WeatherSeachResultProps {
 }
 
 const WeatherSeachResult: React.FC<WeatherSeachResultProps> = ({ item }) => {
+
+  const formatDate = () => {
+    const date = new Date()
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  
+    const dayName = days[date.getDay()];
+    const dayOfMonth = date.getDate();
+    const monthName = months[date.getMonth()];
+  
+    return `${dayName}, ${dayOfMonth} ${monthName}`;
+  };
+  
   return (
     
     <>
@@ -22,7 +35,7 @@ const WeatherSeachResult: React.FC<WeatherSeachResultProps> = ({ item }) => {
             </div>
             <div className="flex-1 flex flex-col justify-center items-center">
               <p className="text-3xl font-bold">{item.date}</p>
-              <p className="text-sm font-light pt-2">Thursday, 31 Aug</p>
+              <p className="text-sm font-light pt-2">{`${formatDate()}`}</p>
             </div>
           </div>
           <div className="flex-1 flex flex-col pt-4 sm:pt-0">
