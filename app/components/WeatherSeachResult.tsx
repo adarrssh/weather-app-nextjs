@@ -51,7 +51,7 @@ const WeatherSeachResult: React.FC<WeatherSeachResultProps> = ({ item }) => {
                 <p className="text-sm">{item.humidity || "-"}</p>
               </div>
               <div className="  flex-1 flex flex-col justify-center items-center">
-                <Image src={'/images/Speed.png'} alt="image" width={40} height={40}></Image>
+                <Image src={'/images/speed.png'} alt="image" width={40} height={40}></Image>
                 <p className="text-sm">speed</p>
                 <p className="text-sm">{item.wind_speed || "-"}</p>
               </div>
@@ -70,7 +70,7 @@ const WeatherSeachResult: React.FC<WeatherSeachResultProps> = ({ item }) => {
               </div>
               <div className="  flex-1 flex flex-col justify-center items-center">
                 <Image
-                  src={'/images/Precipitation.png'}
+                  src={'/images/precipitation.png'}
                   alt="image"
                   width={40}
                   height={40}
